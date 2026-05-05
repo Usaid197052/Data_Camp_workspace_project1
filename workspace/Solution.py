@@ -42,7 +42,7 @@ campaign = campaign.drop(columns=['day', 'month'])
 
 economics = df[['client_id', 'cons_price_idx', 'euribor_three_months']].copy()
 
-# Saving to respective CSVs
+
 client.to_csv("client.csv", index=False)
 campaign.to_csv("campaign.csv", index=False)
 economics.to_csv("economics.csv", index=False)
