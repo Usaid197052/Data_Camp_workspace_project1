@@ -33,7 +33,6 @@ campaign['last_contact_date'] = pd.to_datetime(
     errors='coerce'
 )
 
-
 campaign = campaign.drop(columns=['day', 'month'])
 
 
