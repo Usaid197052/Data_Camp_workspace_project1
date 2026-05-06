@@ -36,7 +36,7 @@ campaign['last_contact_date'] = pd.to_datetime(
     errors='coerce'
 )
 
-# Drop day and month
+
 campaign = campaign.drop(columns=['day', 'month'])
 
 # Create economics DataFrame
