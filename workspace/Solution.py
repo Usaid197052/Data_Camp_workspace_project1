@@ -25,7 +25,6 @@ campaign = df[['client_id', 'number_contacts', 'contact_duration',
                'previous_campaign_contacts', 'previous_outcome',
                'campaign_outcome', 'day', 'month']].copy()
 
-
 campaign['previous_outcome'] = campaign['previous_outcome'].map({'success': 1, 'failure': 0, "nonexistent":0}).astype(bool)
 campaign['campaign_outcome'] = campaign['campaign_outcome'].map({'yes': 1, 'no': 0}).astype(bool)
 
