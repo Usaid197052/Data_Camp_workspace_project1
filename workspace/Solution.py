@@ -7,7 +7,7 @@ client = df[['client_id', 'age', 'job', 'marital', 'education', 'credit_default'
 
 client['education'] = client['education'].str.replace('.', '_')
 client["education"] = client['education'].replace("unknown", np.NaN)
-#Clean Credit_Default
+
 client['credit_default'] = client['credit_default'].map({
     'yes': 1,
     'no': 0,
