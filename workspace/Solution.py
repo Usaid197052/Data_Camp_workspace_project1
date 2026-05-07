@@ -13,7 +13,6 @@ client['credit_default'] = client['credit_default'].map({
     'no': 0,
     'unknown': 0
 }).astype(bool)
-
 client['mortgage'] = client['mortgage'].map({
     'yes': 1,
     'no': 0,
