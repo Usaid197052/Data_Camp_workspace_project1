@@ -37,7 +37,6 @@ campaign['last_contact_date'] = pd.to_datetime(
 )
 
 campaign = campaign.drop(columns=['day', 'month'])
-
 economics = df[['client_id', 'cons_price_idx', 'euribor_three_months']].copy()
 client.to_csv("client.csv", index=False)
 campaign.to_csv("campaign.csv", index=False)
