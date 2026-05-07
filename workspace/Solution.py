@@ -19,7 +19,6 @@ client['mortgage'] = client['mortgage'].map({
     'no': 0,
     'unknown': 0
 }).astype(bool)
-
 campaign = df[['client_id', 'number_contacts', 'contact_duration',
                'previous_campaign_contacts', 'previous_outcome',
                'campaign_outcome', 'day', 'month']].copy()
